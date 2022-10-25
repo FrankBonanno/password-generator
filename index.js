@@ -87,7 +87,34 @@ const characters = [
 	";",
 	"<",
 	">",
-	".",
 	"?",
 	"/",
 ];
+
+let passwordOneEl = document.getElementById("password-one");
+let passwordTwoEl = document.getElementById("password-two");
+
+function generateRandomChar() {
+	let randIndex = Math.floor(Math.random() * characters.length);
+
+	return characters[randIndex];
+}
+
+function genPasswords() {
+	let passwordOne = "";
+	let passwordTwo = "";
+	for (let i = 0; i < 15; i++) {
+		passwordOne += generateRandomChar();
+		passwordTwo += generateRandomChar();
+	}
+
+	passwordOneEl.textContent = passwordOne;
+	passwordTwoEl.textContent = passwordTwo;
+}
+
+function clickToCopy(id) {
+	let copyText = document.getElementById(`password-${id}`);
+
+	navigator.clipboard.writeText(copyText.textContent);
+	alert("Copied: " + copyText.textContent);
+}
