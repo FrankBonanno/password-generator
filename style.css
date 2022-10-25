@@ -1,0 +1,15 @@
+:root {
+	--clr-dark: #1c1c1c;
+	--clr-blue-dark: #1f2937;
+	--clr-blue-light: #273549;
+
+	--txt-white: #ffffff;
+	--txt-green: #4adf86;
+
+	--btn-green: #10b981;
+	--pswd-green: #55f991;
+}
+
+body {
+	margin: 0;
+}
