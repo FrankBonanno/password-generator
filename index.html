@@ -12,14 +12,40 @@
 			<h1 class="green-title">random password</h1>
 
 			<p class="description">Never use an insecure password again.</p>
-			<button id="password-btn" onclick="genPasswords()">
-				Generate Passwords
-			</button>
+			<div class="btns">
+				<button id="password-btn" onclick="renderPasswords()">
+					Generate Passwords
+				</button>
+				<div>
+					<button
+						onclick="setChars('letters')"
+						id="letters-el"
+						class="small"
+					>
+						ABC
+					</button>
+					<button
+						onclick="setChars('numbers')"
+						id="numbers-el"
+						class="small"
+					>
+						123
+					</button>
+					<button
+						onclick="setChars('symbols')"
+						id="symbols-el"
+						class="small"
+					>
+						!@$
+					</button>
+				</div>
+			</div>
 			<hr />
 			<div class="passwords">
 				<div id="password-one" onclick="clickToCopy('one')"></div>
 				<div id="password-two" onclick="clickToCopy('two')"></div>
 			</div>
+			<p id="copy-el"></p>
 		</div>
 
 		<script src="index.js"></script>

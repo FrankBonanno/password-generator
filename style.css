@@ -62,7 +62,12 @@ h1 {
 	font-size: 20px;
 }
 
-#password-btn {
+.btns {
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
 	padding: 9px 15px;
 	background-color: var(--btn-green);
 	color: var(--txt-white);
@@ -71,6 +76,10 @@ h1 {
 	margin-top: 51px;
 	font-family: "Inter";
 	font-weight: 500;
+}
+
+.small {
+	padding: 9px;
 }
 
 hr {
@@ -95,4 +104,13 @@ hr {
 	font-family: "Inter";
 	text-align: center;
 	line-height: 39px;
+}
+
+#copy-el {
+	text-align: center;
+	color: var(--txt-accent);
+	font-family: "Inter";
+	margin-top: 35px;
+	font-size: 14px;
+	letter-spacing: -0.025em;
 }
