@@ -25,6 +25,10 @@
 body {
 	margin: 0;
 	background-color: var(--clr-dark);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 h1 {
@@ -38,10 +42,11 @@ h1 {
 	width: 550px;
 	height: 550px;
 
-	margin: 50px auto;
 	padding: 115px 52px;
 
 	background-color: var(--clr-blue-dark);
+
+	border-radius: 10px;
 }
 
 h1 {
@@ -76,6 +81,7 @@ button {
 	margin-top: 51px;
 	font-family: "Inter";
 	font-weight: 500;
+	cursor: pointer;
 }
 
 .small {
@@ -113,4 +119,8 @@ hr {
 	margin-top: 35px;
 	font-size: 14px;
 	letter-spacing: -0.025em;
+}
+
+.passwords div {
+	cursor: pointer;
 }
